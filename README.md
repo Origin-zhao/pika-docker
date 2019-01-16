@@ -4,7 +4,8 @@
 ``` bash
 docker run --name pika  registry.cn-hangzhou.aliyuncs.com/origin/pika:v3.0.6
 ```
-# 存储卷
-/pika/db
-/pika/conf
+# 存储卷位置
+ /pika/db
+
+ /pika/conf
 
