@@ -16,7 +16,7 @@ RUN yum install wget tar bzip2 -y && \
     wget -O pick.tar.bz2 "https://github.com/Qihoo360/pika/releases/download/${VERSION}/pika-linux-x86_64-${VERSION}.tar.bz2" && \
     tar -jxvf pick.tar.bz2 -C /pika/ --strip-components=2 && rm pick.tar.bz2 && \
     pwd && ls -l && \
-    sed -i '2c port : ${PORT}' /pika/conf/pika.conf && \ 
+    sed -i '2c port : ${PORT}' /pika/pika.conf && \ 
     echo "Asia/shanghai" > /etc/timezone
 
 ENV PIKA  /pika
@@ -25,4 +25,4 @@ WORKDIR ${PIKA}
 ENV PATH ${PIKA}/bin:${PATH}
 WORKDIR ${PIKA}
 EXPOSE ${PORT}
-CMD ["pika","-c","/pika/conf/pika.conf"]
+CMD ["pika","-c","/pika/pika.conf"]
