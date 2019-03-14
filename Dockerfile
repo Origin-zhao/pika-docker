@@ -1,6 +1,6 @@
 FROM centos:centos7
 MAINTAINER joyuan <enginezy@gmail.com>
-ARG VERSION=v3.0.7
+ARG VERSION=v3.0.8
 ARG PORT=6379
 #RUN #rpm -ivh https://mirrors.ustc.edu.cn/epel/epel-release-latest-7.noarch.rpm && \
     #yum -y update && \
