@@ -25,4 +25,4 @@ WORKDIR ${PIKA}
 ENV PATH ${PIKA}/bin:${PATH}
 WORKDIR ${PIKA}
 EXPOSE ${PORT}
-CMD ["pika","-c","/pika/conf/pika.conf"]
+CMD ["/pika/bin/pika","-c","/pika/conf/pika.conf"]
